@@ -15,7 +15,8 @@ body {
 }
 
 .sidebar {
-	width: 30%;
+	flex: 1;
+	margin: 1rem;
 }
 
 .sidebar ul {
@@ -36,7 +37,8 @@ body {
 }
 
 .content {
-	width: 65%;
+	flex: 3;
+	margin: 1rem;
 }
 
 .summary, .experience, .education, .social-media, .vitals {
@@ -50,9 +52,14 @@ body {
 	width: 100%;
 }
 
-@media (max-width:600px) {
+@media (max-width:800px) {
 	.container {
-		flex-wrap: wrap;
+		flex-flow: row wrap;
+		max-width: 600px;
+		padding: 3rem;
+	}
+	.sidebar, .content {
+		margin: 0 1.5rem;
 	}
 }
 
