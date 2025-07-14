@@ -1,0 +1,93 @@
+body {
+	padding: 0;
+	margin: 0;
+	background: #0099F7 url(background.png) repeat center;
+	font-family: Aptos, Calibri, Arial, sans-serif;
+}
+
+#container {
+	padding: 1rem 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	max-width: 1000px;
+	margin: auto;
+}
+
+.sidebar {
+	width: 30%;
+}
+
+.sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.sidebar li {
+	padding: 0.25rem 0;
+	margin: 0.25rem 0;
+}
+
+.list-margin {
+	margin-right: 0.75rem;
+	width: 16px;
+	height: 16px;
+}
+
+.content {
+	width: 65%;
+}
+
+.summary, .experience, .education, .social-media, .vitals {
+	background: #fff;
+	padding: 1rem;
+	box-shadow: 1rem 1rem #000;
+	margin-bottom: 2rem;
+}
+
+.hero-img {
+	width: 100%;
+}
+
+@media (max-width:600px) {
+	.container {
+		flex-wrap: wrap;
+	}
+}
+
+/* Text Formatting */
+h1, h2, h3, h4, h5, h6, h7, h8 {
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	color: #F11712;
+	text-shadow: 0.1rem 0.1rem #000;
+	font-family: "Fugaz One", sans-serif;
+}
+
+s {
+	text-decoration-thickness: 2px;
+}
+
+a, a:visited {
+	color: #0099F7;
+	text-decoration: underline;
+}
+
+.bluetext {
+	color: #0099F7;
+}
+
+.goldtext {
+	color: gold;
+}
+
+/* Google Fonts import */
+.fugaz-one-regular {
+	font-family: "Fugaz One", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
