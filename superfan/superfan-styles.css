@@ -41,7 +41,40 @@ body {
 	margin: 1rem;
 }
 
-.summary, .experience, .education, .social-media, .vitals {
+.grid {
+	max-width: 100%;
+	display: grid;
+	grid-template-columns: 45% 1fr 45%;
+	grid-auto-rows: max-content;
+	grid-template-areas:
+	"header header header"
+	"location space years"
+	"description description description";
+	grid-gap: 0.5rem;
+}
+
+.grid-header {
+	grid-area: header;
+}
+
+.grid-location {
+	grid-area: location;
+}
+
+.grid-years {
+	grid-area: years;
+	text-align: right;
+}
+
+.grid-description {
+	grid-area: description;
+}
+
+ul.grid-description {
+	margin: 0;
+}
+
+.polaroid {
 	background: #fff;
 	padding: 1rem;
 	box-shadow: 1rem 1rem #000;
@@ -88,13 +121,15 @@ a, a:visited {
 	font-style: normal;
 }
 
-@media (max-width:800px) {
+@media (max-width:600px) {
 	#container {
+		display: flex;
 		flex-flow: column wrap;
 	}
 
 	.sidebar, .content {
+		flex: 100%;
 		margin: 0 1.5rem;
-		flex: 100% !important;
 	}
+
 }

@@ -1,0 +1,126 @@
+body, html, h1, h2, h3, h4, h5, h6, p {
+	padding: 0;
+	margin: 0;
+	font-family: Helvetica, Aptos, Calibri, Arial, sans-serif;
+}
+
+body {
+	background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5) ), url('carina-jwst.png') no-repeat center;
+	background-attachment: fixed;
+}
+
+.container {
+	max-width: 900px;
+	margin: 15px auto;
+	padding: 15px;
+	display: grid;
+	grid-template-areas: "header header" "sidebar content";
+}
+
+.header {
+	grid-area: header;
+	text-align: center;
+	font-size: 32pt;
+	color: #fff;
+	text-shadow: 2px 4px 4px #000;
+	padding: 3rem 0 2rem 0;
+}
+
+.sidebar {
+	grid-area: sidebar;
+}
+
+.sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.sidebar li {
+	padding: 0.25rem 0;
+}
+
+.content {
+	grid-area: content;
+	max-width: 720px;
+}
+
+.sidebar, .content {
+	padding: 1rem;
+	background-color: rgb(200 200 200 / 85%);
+}
+
+.content p {
+	margin: 0.5rem 0;
+}
+
+blockquote {
+	padding: 1rem 3rem;
+	background-color: rgb(255 255 255 / 80%);
+	border-style: solid none solid none;
+	border-width: 1px;
+}
+
+summary {
+	cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #1d2748;
+}
+
+h1 {
+	font-family: "Audiowide", sans-serif;
+	border-bottom: 3px dashed #fff;
+	margin: 2rem 0 1rem 0;
+	font-size: 20pt;
+}
+
+.sidebar h1 {
+	padding-top: 0;
+	margin-top: 0;
+}
+
+h2 {
+	font-size: 16pt;
+}
+
+h3 {
+	font-size: 14pt;
+}
+
+.audiowide-regular {
+	font-family: "Audiowide", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+a, a:visited {
+	color: #3280b9;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #c6d2e8;
+}
+
+.sidebar a, .sidebar a:visited {
+	display: block;
+	width: 100%;
+	padding: 3px;
+	text-decoration: none;
+	color: #244278;
+	background-color: rgb(255 255 255 / 80%);
+}
+
+.sidebar a:hover {
+	color: rgb(255 255 255 / 80%);
+	background-color: #244278;
+}
+
+@media (max-width:600px) {
+	.container {
+		max-width: 600px;
+		display: block;
+	}
+}

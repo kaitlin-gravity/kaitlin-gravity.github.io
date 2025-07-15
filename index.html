@@ -1,21 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
 
-<!-- set title to be shown in tab -->
-<title>My Website</title>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- reference local CSS code -->
-<link rel="stylesheet" href="styles.css">
+	<!-- set title to be shown in tab -->
+	<title>Kait P's Big Page of Web Resources</title>
 
-<!-- reference Google Fonts API -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+	<!-- reference local CSS code -->
+	<link rel="stylesheet" href="bigpage-styles.css">
+
+	<!-- reference Google Fonts API -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+</head>
 
 <body>
-	<ul style="font-size: 18px;">
-		<li><a href="/flexbox/index.html">Flexbox Layout</a></li>
-	</ul>
+	<div class="container">
+		<div class="header audiowide-regular">Kait P's Big Page of Web Resources</div>
+		<div class="sidebar">
+			<h1>Navigation</h1>
+			<ul class="navigation">
+				<li><a href="#bigpages">In-Class Resources</a></li>
+				<li><a href="#webhosts">Webhosts</a></li>
+				<li><a href="#glossary">Glossary</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<p>Hi! I'm Kait P. and this is my big page of web resources, built for the 2025 EMIT MMA Summer School hosted by Vanderbilt University. This page was built for the summer school and is up to date as of August 2025.</p>
+
+			<h1 id="bigpages">Kait-Built Resources</h1>
+			<h2>Example Pages</h2>
+			<ul>
+				<li><a href="superfan/index.html">Clark Kent&mdash;Investigative Reporter, CV (formatted)</a></li>
+				<li><a href="superfan/nocss.html">Clark Kent&mdash;Investigative Reporter, CV (unformatted)</a></li>
+				<li><a href="blankpage/index.html">Blank Page</a></li>
+			</ul>
+
+			<h1 id="webhosts">Web Hosting Services</h1>
+			<p>A web hosting service is a service that offers the storage and capabilities required for you to create and maintain a site and make it accessible on the World Wide Web. There are free and paid webhosts which offer support for a variety of web technologies.</p>
+			<p>At minimum, modern webhosts support HTML, CSS, and JavaScript. Many also provide pre-built themes.</p>
+			<h2>Free Web Hosts</h2>
+			<ul>
+				<li><a href="https://pages.github.com/" target="_blank">GitHub Pages</a></li>
+				<li><a href="https://neocities.org/" target="_blank">Neocities</a></li>
+				<li><a href="https://wordpress.com/" target="_blank">WordPress.com</a></li>
+			</ul>
+
+			<h2>Paid Web Hosts</h2>
+			<p>Paid web hosting often supports more advanced apps and systems than simple code. They also offer domain name registration, which allows you to make the URL whatever you want. My personal website is hosted on Reclaim.</p>
+			<ul>
+				<li><a href="https://www.reclaimhosting.com/" target="_blank">Reclaim Hosting</a> ($3/month)</li>
+				<li><a href="https://www.nixihost.com/hosting/reddit" target="_blank">Nixihost</a> ($6/month)</li>
+				<li><a href="https://www.knownhost.com/" target="_blank">KnownHost</a> ($7/month)</li>
+			</ul>
+
+			<h2>Web Hosts <b>To Avoid</b></h2>
+			<p>Lots of people want or need to make websites and will pay extra for it to be easier. Unfortunately there are those who take advantage of that demand. Here are a list of web hosts that should be avoided.</p>
+			<details>
+				<summary>Expand</summary>
+				<ul>
+					<li>GoDaddy</li>
+					<li>GoDaddy. This duplicate is not a mistake, I cannot stress this enough.</li>
+					<li>Hostinger</li>
+					<li>Endurance International Group:
+						<ul>
+							<li>Bluehost</li>
+							<li>Domain.com</li>
+							<li>Web.com</li>
+							<li>FastDomain</li>
+							<li>Homestead</li>
+							<li>HostGator</li>
+							<li>iPage</li>
+							<li>LogicBoxes</li>
+							<li>ResellerClub</li>
+							<li>Typepad</li>
+							<li>CrazyDomains</li>
+							<li>Vodien</li>
+							<li>MarkMonitor</li>
+							<li>Yoast SEO</li>
+						</ul>
+					</li>
+					<li>DomainRacer</li>
+					<li>Dreamhost</li>
+					<li>Freenom</li>
+				</ul>
+			</details>
+
+			<h1>Web Accessibility Resources</h1>
+			<ul>
+				<li><a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank">WCAG: Web Content Accessibility Guidelines</a></li>
+				<li><a href="https://webaim.org/" target="_blank">WebAIM: Web Accessibility in Mind</a></li>
+				<li><a href="https://www.w3.org/WAI/ARIA/apg/practices/read-me-first/" target="_blank">ARIA: Accessible Rich Internet Application</a><br />*ARIA is somewhat advanced and it is better to leave out than use incorrectly</li>
+				<li><a href="https://wave.webaim.org/" target="_blank">WAVE: Web Accessibility Evaluation Tool</a></li>
+			</ul>
+
+			<h1 class="glossary">Glossary and Articles</h1>
+			<h4>World Wide Web</h4>
+			<p>The "www" in most urls, the World Wide Web is an information system and the primary tool used for content
+				sharing on the internet.</p>
+			<h4>HTML/Hyper Text Markup Language</h4>
+			<p>The basic markup language used to create websites. HTML defines the structure and content of website
+				content and can include plain text, embedded video, embedded audio, and images.</p>
+			<h4>CSS/Cascading Style Sheets</h4>
+			<p>A style sheet language used to specify the presentation of a markup language, usually HTML. If it's
+				pretty, it's using CSS.</p>
+			<h4>JavaScript (JS)</h4>
+			<p>A programming language used to execute advanced web behavior like animation, response to events, and
+				interactivity. With HTML and CSS, it provides the foundation for the World Wide Web.</p>
+			<h4>WYSIWYG/What You See Is What You Get</h4>
+			<p>Visual editors designed to convert rich text displayed in a User Interface into a code language. WYSIWYG
+				editors for web development usually convert to HTML and CSS.</p>
+			</ul>
+		</div>
+	</div>
 </body>
+
 </html>
