@@ -26,31 +26,31 @@ body {
 	padding: 3rem 0 2rem 0;
 }
 
-.sidebar {
+navigation {
 	grid-area: sidebar;
 }
 
-.sidebar ul {
+navigation ul {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 }
 
-.sidebar li {
+navigation li {
 	padding: 0.25rem 0;
 }
 
-.content {
+main {
 	grid-area: content;
 	max-width: 720px;
 }
 
-.sidebar, .content {
+navigation, main {
 	padding: 1rem;
 	background-color: rgb(200 200 200 / 85%);
 }
 
-.content p {
+main p {
 	margin: 0.5rem 0;
 }
 
@@ -76,7 +76,7 @@ h1 {
 	font-size: 20pt;
 }
 
-.sidebar h1 {
+navigation h1 {
 	padding-top: 0;
 	margin-top: 0;
 }
@@ -104,7 +104,7 @@ a:hover {
 	color: #c6d2e8;
 }
 
-.sidebar a, .sidebar a:visited {
+navigation a, navigation a:visited {
 	display: block;
 	width: 100%;
 	padding: 3px;
@@ -113,7 +113,7 @@ a:hover {
 	background-color: rgb(255 255 255 / 80%);
 }
 
-.sidebar a:hover {
+navigation a:hover {
 	color: rgb(255 255 255 / 80%);
 	background-color: #244278;
 }
