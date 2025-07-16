@@ -28,6 +28,7 @@ body {
 
 navigation {
 	grid-area: sidebar;
+	display: block;
 }
 
 navigation ul {
